@@ -1,0 +1,181 @@
+{
+  "project_name": "E-commerce Website",
+  "analysis": {
+    "total_monthly_cost": 7150,
+    "budget": 5000.0,
+    "budget_variance": 2150.0,
+    "is_over_budget": true,
+    "service_costs": {
+      "EC2": 1800.0,
+      "RDS": 1800.0,
+      "S3": 450.0,
+      "CloudFront": 200.0,
+      "Route53": 100.0,
+      "CloudWatch": 150.0,
+      "Lambda": 500.0,
+      "SES": 200.0,
+      "WAF": 150.0,
+      "Backup": 600.0,
+      "Load Balancer": 300.0,
+      "VPC": 100.0,
+      "Data Transfer": 800.0
+    },
+    "high_cost_services": {
+      "EC2": 1800.0,
+      "RDS": 1800.0,
+      "Data Transfer": 800.0
+    }
+  },
+  "recommendations": [
+    {
+      "title": "Migrate to AWS Free Tier for EC2",
+      "service": "EC2",
+      "current_cost": 1800.0,
+      "potential_savings": 900.0,
+      "recommendation_type": "free_tier",
+      "description": "Utilize the AWS Free Tier for EC2 to reduce costs. This includes 750 hours of Linux/Unix usage per month.",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Stop and terminate all EC2 instances",
+        "Create a new EC2 instance using the AWS Free Tier",
+        "Migrate applications to the new EC2 instance"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Migrate to AWS Free Tier for RDS",
+      "service": "RDS",
+      "current_cost": 1800.0,
+      "potential_savings": 900.0,
+      "recommendation_type": "free_tier",
+      "description": "Utilize the AWS Free Tier for RDS to reduce costs. This includes 750 hours of usage per month.",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Stop and terminate all RDS instances",
+        "Create a new RDS instance using the AWS Free Tier",
+        "Migrate databases to the new RDS instance"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use PostgreSQL as an Open-Source Alternative",
+      "service": "RDS",
+      "current_cost": 1800.0,
+      "potential_savings": 900.0,
+      "recommendation_type": "open_source",
+      "description": "Use PostgreSQL as an open-source alternative to RDS. This can be self-hosted on-premises or in the cloud.",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Install PostgreSQL on a self-hosted server",
+        "Migrate databases to PostgreSQL",
+        "Configure PostgreSQL for high availability"
+      ],
+      "cloud_providers": [
+        "Self-hosted"
+      ]
+    },
+    {
+      "title": "Use DigitalOcean as an Alternative Provider",
+      "service": "EC2",
+      "current_cost": 1800.0,
+      "potential_savings": 600.0,
+      "recommendation_type": "alternative_provider",
+      "description": "Use DigitalOcean as an alternative provider for EC2. This can provide cost savings and improved performance.",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Create a new DigitalOcean account",
+        "Migrate applications to DigitalOcean",
+        "Configure DigitalOcean for high availability"
+      ],
+      "cloud_providers": [
+        "DigitalOcean"
+      ]
+    },
+    {
+      "title": "Right-Size EC2 Instances",
+      "service": "EC2",
+      "current_cost": 1800.0,
+      "potential_savings": 300.0,
+      "recommendation_type": "optimization",
+      "description": "Right-size EC2 instances to reduce costs. This includes using smaller instance types and optimizing resource utilization.",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Analyze EC2 instance usage",
+        "Right-size EC2 instances",
+        "Monitor and adjust instance sizes as needed"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use Reserved Instances for EC2",
+      "service": "EC2",
+      "current_cost": 1800.0,
+      "potential_savings": 450.0,
+      "recommendation_type": "reserved_instance",
+      "description": "Use reserved instances for EC2 to reduce costs. This includes committing to a 1-year or 3-year term.",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Analyze EC2 instance usage",
+        "Commit to a reserved instance term",
+        "Migrate applications to reserved instances"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use Serverless Computing for Lambda",
+      "service": "Lambda",
+      "current_cost": 500.0,
+      "potential_savings": 250.0,
+      "recommendation_type": "serverless",
+      "description": "Use serverless computing for Lambda to reduce costs. This includes using AWS Lambda functions and optimizing resource utilization.",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Analyze Lambda function usage",
+        "Migrate applications to serverless computing",
+        "Monitor and adjust resource utilization as needed"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Optimize Data Transfer Costs",
+      "service": "Data Transfer",
+      "current_cost": 800.0,
+      "potential_savings": 400.0,
+      "recommendation_type": "optimization",
+      "description": "Optimize data transfer costs by reducing data transfer volumes and using cost-effective transfer options.",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Analyze data transfer usage",
+        "Optimize data transfer volumes",
+        "Use cost-effective transfer options"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    }
+  ],
+  "summary": {
+    "total_potential_savings": 4700.0,
+    "savings_percentage": 65.73,
+    "recommendations_count": 8,
+    "high_impact_recommendations": 3
+  }
+}

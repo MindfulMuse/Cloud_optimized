@@ -1,0 +1,2 @@
+I want to build an e-commerce website using Next.js
+with PostgreSQL database. Budget is 5000 INR per month.

@@ -1,0 +1,16 @@
+{
+  "name": "E-commerce Website",
+  "budget_inr_per_month": 5000.0,
+  "description": "Build an e-commerce website using Next.js with PostgreSQL database",
+  "tech_stack": {
+    "frontend": "next.js",
+    "backend": "null",
+    "database": "postgresql",
+    "proxy": "null",
+    "hosting": "null"
+  },
+  "non_functional_requirements": [
+    "scalability",
+    "availability"
+  ]
+}

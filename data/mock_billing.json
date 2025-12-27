@@ -1,0 +1,178 @@
+[
+  {
+    "month": "2025-01",
+    "service": "EC2",
+    "resource_id": "i-web-server-01",
+    "region": "ap-south-1",
+    "usage_type": "t3.medium Linux/UNIX",
+    "usage_quantity": 720,
+    "unit": "hours",
+    "cost_inr": 1200,
+    "desc": "Primary web server hosting React frontend"
+  },
+  {
+    "month": "2025-01",
+    "service": "RDS",
+    "resource_id": "db-mongodb-prod",
+    "region": "ap-south-1",
+    "usage_type": "db.t3.small MongoDB",
+    "usage_quantity": 720,
+    "unit": "hours",
+    "cost_inr": 900,
+    "desc": "Production MongoDB database"
+  },
+  {
+    "month": "2025-01",
+    "service": "S3",
+    "resource_id": "bucket-static-assets",
+    "region": "ap-south-1",
+    "usage_type": "Standard Storage",
+    "usage_quantity": 50,
+    "unit": "GB-month",
+    "cost_inr": 150,
+    "desc": "Static files and user uploads"
+  },
+  {
+    "month": "2025-01",
+    "service": "EC2",
+    "resource_id": "i-api-server-01",
+    "region": "ap-south-1",
+    "usage_type": "t3.micro Linux/UNIX",
+    "usage_quantity": 720,
+    "unit": "hours",
+    "cost_inr": 600,
+    "desc": "API server handling backend requests"
+  },
+  {
+    "month": "2025-01",
+    "service": "RDS",
+    "resource_id": "db-postgres-prod",
+    "region": "ap-south-1",
+    "usage_type": "db.t3.small PostgreSQL",
+    "usage_quantity": 720,
+    "unit": "hours",
+    "cost_inr": 900,
+    "desc": "Production PostgreSQL database"
+  },
+  {
+    "month": "2025-01",
+    "service": "S3",
+    "resource_id": "bucket-backups",
+    "region": "ap-south-1",
+    "usage_type": "Standard Storage",
+    "usage_quantity": 100,
+    "unit": "GB-month",
+    "cost_inr": 300,
+    "desc": "Database backups"
+  },
+  {
+    "month": "2025-01",
+    "service": "CloudFront",
+    "resource_id": "distribution-static-assets",
+    "region": "ap-south-1",
+    "usage_type": "Data Transfer Out",
+    "usage_quantity": 1000,
+    "unit": "GB",
+    "cost_inr": 200,
+    "desc": "Static asset distribution"
+  },
+  {
+    "month": "2025-01",
+    "service": "Route53",
+    "resource_id": "zone-static-assets",
+    "region": "ap-south-1",
+    "usage_type": "Domain Registration",
+    "usage_quantity": 1,
+    "unit": "domains",
+    "cost_inr": 100,
+    "desc": "Static asset domain registration"
+  },
+  {
+    "month": "2025-01",
+    "service": "CloudWatch",
+    "resource_id": "log-group-web-server",
+    "region": "ap-south-1",
+    "usage_type": "Log Storage",
+    "usage_quantity": 50,
+    "unit": "GB-month",
+    "cost_inr": 150,
+    "desc": "Web server log storage"
+  },
+  {
+    "month": "2025-01",
+    "service": "Lambda",
+    "resource_id": "function-worker-01",
+    "region": "ap-south-1",
+    "usage_type": "Request",
+    "usage_quantity": 10000,
+    "unit": "requests",
+    "cost_inr": 500,
+    "desc": "Worker function handling tasks"
+  },
+  {
+    "month": "2025-01",
+    "service": "SES",
+    "resource_id": "identity-email",
+    "region": "ap-south-1",
+    "usage_type": "Email Sending",
+    "usage_quantity": 1000,
+    "unit": "emails",
+    "cost_inr": 200,
+    "desc": "Email sending service"
+  },
+  {
+    "month": "2025-01",
+    "service": "WAF",
+    "resource_id": "web-acl-static-assets",
+    "region": "ap-south-1",
+    "usage_type": "Rule",
+    "usage_quantity": 5,
+    "unit": "rules",
+    "cost_inr": 150,
+    "desc": "Web application firewall rules"
+  },
+  {
+    "month": "2025-01",
+    "service": "Backup",
+    "resource_id": "backup-policy",
+    "region": "ap-south-1",
+    "usage_type": "Backup Storage",
+    "usage_quantity": 20,
+    "unit": "GB-month",
+    "cost_inr": 600,
+    "desc": "Database backup storage"
+  },
+  {
+    "month": "2025-01",
+    "service": "Load Balancer",
+    "resource_id": "load-balancer-prod",
+    "region": "ap-south-1",
+    "usage_type": "Data Transfer Out",
+    "usage_quantity": 500,
+    "unit": "GB",
+    "cost_inr": 300,
+    "desc": "Production load balancer"
+  },
+  {
+    "month": "2025-01",
+    "service": "VPC",
+    "resource_id": "vpc-prod",
+    "region": "ap-south-1",
+    "usage_type": "VPC",
+    "usage_quantity": 1,
+    "unit": "vpc",
+    "cost_inr": 100,
+    "desc": "Production VPC"
+  },
+  {
+    "month": "2025-01",
+    "service": "Data Transfer",
+    "resource_id": "data-transfer-out",
+    "region": "ap-south-1",
+    "usage_type": "Data Transfer Out",
+    "usage_quantity": 2000,
+    "unit": "GB",
+    "cost_inr": 800,
+    "desc": "Data transfer out"
+  }
+]
