@@ -15,7 +15,7 @@ An intelligent cloud cost optimization tool that uses **Large Language Models (L
 - [Configuration](#️-configuration)
 - [Usage](#-usage)
 - [Example Files](#-example-files)
-- [System Architecture](#-system-architecture)
+- [System Architecture](#-System-Architecture)
 - [Optimization Logic ](#-Optimization-Logic)
 - [Use Cases](#-use-cases)
 
