@@ -91,8 +91,9 @@ cloud-cost-optimizer/
     ├── example_billing.json
     └── example_report.json
 
-'''
-🔧 Prerequisites
+```
+
+## 🔧 Prerequisites
 Required Software
 
 Python: 3.9 or higher
@@ -112,7 +113,7 @@ Free tier includes generous quota for testing
 
 
 
-📥 Installation
+## 📥 Installation
 Step 1: Clone the Repository
 bashgit clone https://github.com/yourusername/cloud-cost-optimizer.git
 cd cloud-cost-optimizer
@@ -131,8 +132,9 @@ requests: HTTP library for API calls
 python-dotenv: Environment variable management
 groq: Groq LLM API client
 
+---
 
-⚙️ Configuration
+## ⚙️ Configuration
 Step 1: Get Groq API Key
 
 Go to https://console.groq.com
@@ -157,18 +159,21 @@ No quotes around the API key
 No spaces before or after =
 Never commit .env to version control
 
+---
 
-🚀 Usage
+## 🚀 Usage
 Starting the Application
 bashpython main.py
 
-1️⃣ Run the python file
+---
+
+### 1️⃣ Run the python file
 
 <img width="947" height="521" alt="image" src="https://github.com/user-attachments/assets/bc2c7b5a-bdb9-47eb-8fbb-bdcfc7f8d2fb" />
 
 
 
-2️⃣ Run Complete Analysis
+### 2️⃣ Run Complete Analysis
 
 <img width="967" height="517" alt="image" src="https://github.com/user-attachments/assets/104336c0-0611-43d0-8a6b-0d376c0e0dcf" />
 
@@ -180,29 +185,37 @@ Output:
 
 
 
-3️⃣ ##ANALYSIS SUMMARY
+### 3️⃣ ANALYSIS SUMMARY
 
 <img width="848" height="425" alt="image" src="https://github.com/user-attachments/assets/0f09e116-1bea-4d11-8f5d-59e3189fc3d2" />
 
 
 <img width="743" height="621" alt="image" src="https://github.com/user-attachments/assets/166e5351-dc92-40b4-92a6-37a870f0395e" />
 
-4️⃣ Export Report
+### 4️⃣ Export Report
 Select Option 4 to save a formatted text report.
-5️⃣ Exit
+<img width="906" height="233" alt="image" src="https://github.com/user-attachments/assets/87ee5b01-88c0-42a8-a96d-a2981bfd0a2f" />
+
+
+### 5️⃣ Exit
 Select Option 5 to close the application.
+<img width="766" height="486" alt="image" src="https://github.com/user-attachments/assets/79877f3a-db7f-4055-90e3-28494f781320" />
+<img width="991" height="502" alt="image" src="https://github.com/user-attachments/assets/88fae00d-c536-454d-9470-62cc7358a8c8" />
 
+---
 
-Example output :
+# Example output :
 <img width="838" height="441" alt="image" src="https://github.com/user-attachments/assets/6f814774-bbb7-4467-882f-379c7637c511" />
 
-##mock_billing.json
+## mock_billing.json
 
 <img width="1341" height="498" alt="image" src="https://github.com/user-attachments/assets/3445cb97-da4f-479a-b101-656f13760252" />
 
-##cost_optimization_report.json 
+
+## cost_optimization_report.json 
 <img width="820" height="912" alt="image" src="https://github.com/user-attachments/assets/3f9df6e6-6961-4550-b1c1-1801cb700319" />
 
-##project_profile.json
+
+## project_profile.json
 <img width="1292" height="667" alt="image" src="https://github.com/user-attachments/assets/390024c4-3caf-4b0e-84b9-8a72354161b0" />
 
