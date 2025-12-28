@@ -134,111 +134,48 @@ Never commit .env to version control
 🚀 Usage
 Starting the Application
 bashpython main.py
-Main Menu
-======================================================================
-                      Cloud Cost Optimizer
-======================================================================
 
-🤖 AI-Powered Cloud Cost Analysis & Optimization
+1️⃣ Run the python file
 
-Please select an option:
+<img width="947" height="521" alt="image" src="https://github.com/user-attachments/assets/bc2c7b5a-bdb9-47eb-8fbb-bdcfc7f8d2fb" />
 
-  1. Enter New Project Description
-  2. Run Complete Cost Analysis
-  3. View Recommendations
-  4. Export Report
-  5. Exit
 
-Enter your choice (1-5):
-Workflow
-1️⃣ Enter Project Description
-Select Option 1, then type your project description:
-I want to build an e-commerce platform for selling handmade crafts.
-The frontend will use React with Next.js, backend with Node.js.
-MongoDB for database, Nginx as reverse proxy.
-Hosting on AWS with Docker containers.
-My budget is 8000 rupees per month.
-The system needs to be highly available and scalable.
-DONE
-Press Enter after typing DONE.
+
 2️⃣ Run Complete Analysis
-Select Option 2 to:
 
-Extract project profile using AI
-Generate realistic billing records (12-20)
-Analyze costs and create recommendations
-Display summary results
+<img width="967" height="517" alt="image" src="https://github.com/user-attachments/assets/104336c0-0611-43d0-8a6b-0d376c0e0dcf" />
 
-Expected output:
-======================================================================
-STEP 1/3: Extracting Project Profile
-======================================================================
+Output:
 
-Analyzing: I want to build an e-commerce platform...
-  ✓ Extracted profile for: Handmade Crafts E-commerce Platform
-  ✓ Budget: ₹8,000.00/month
+<img width="882" height="640" alt="image" src="https://github.com/user-attachments/assets/3841f024-759a-4910-99db-7eb364ddf4fc" />
 
-✅ Project profile extracted and saved
+<img width="875" height="542" alt="image" src="https://github.com/user-attachments/assets/b75af61c-0bc1-4af0-ba0c-87f1a5bce21e" />
 
-======================================================================
-STEP 2/3: Generating Synthetic Billing Data
-======================================================================
 
-  → Generating billing data for AWS...
-  ✓ Generated 15 billing records
-  ✓ Total monthly cost: ₹8,450.00
 
-✅ Mock billing data generated and saved
+3️⃣ ##ANALYSIS SUMMARY
 
-======================================================================
-STEP 3/3: Analyzing Costs & Generating Recommendations
-======================================================================
+<img width="848" height="425" alt="image" src="https://github.com/user-attachments/assets/0f09e116-1bea-4d11-8f5d-59e3189fc3d2" />
 
-  📊 Analyzing costs...
-  🤖 Generating recommendations with AI...
-  ✅ Generated 8 recommendations
 
-✅ Cost optimization report generated and saved
+<img width="743" height="621" alt="image" src="https://github.com/user-attachments/assets/166e5351-dc92-40b4-92a6-37a870f0395e" />
 
-======================================================================
-📊 ANALYSIS SUMMARY
-======================================================================
-
-💰 Cost Overview:
-   Total Monthly Cost: ₹8,450.00
-   Budget:             ₹8,000.00
-   Variance:           ₹450.00
-   Status:             ⚠️  OVER BUDGET
-
-💡 Optimization Potential:
-   Total Savings:      ₹3,200.00
-   Savings %:          37.9%
-   Recommendations:    8
-3️⃣ View Recommendations
-Select Option 3 to see detailed recommendations:
-======================================================================
-#1: Migrate MongoDB to Self-Hosted Open Source
-======================================================================
-Service:            MongoDB
-Current Cost:       ₹1,200.00
-Potential Savings:  ₹600.00
-Type:               open_source
-Implementation:     MEDIUM effort
-Risk Level:         MEDIUM
-
-📝 Description:
-   Migrate from managed MongoDB service to self-hosted open-source
-   MongoDB on EC2, reducing costs while maintaining functionality.
-
-☁️  Cloud Providers: AWS, Azure, GCP
-
-📋 Implementation Steps:
-   1. Set up EC2 instance with MongoDB
-   2. Configure backup and monitoring
-   3. Migrate data from managed service
-   4. Update application connection strings
-   5. Test thoroughly before switching
 4️⃣ Export Report
 Select Option 4 to save a formatted text report.
 5️⃣ Exit
 Select Option 5 to close the application.
+
+
+Example output :
+<img width="838" height="441" alt="image" src="https://github.com/user-attachments/assets/6f814774-bbb7-4467-882f-379c7637c511" />
+
+##mock_billing.json
+
+<img width="1341" height="498" alt="image" src="https://github.com/user-attachments/assets/3445cb97-da4f-479a-b101-656f13760252" />
+
+##cost_optimization_report.json 
+<img width="820" height="912" alt="image" src="https://github.com/user-attachments/assets/3f9df6e6-6961-4550-b1c1-1801cb700319" />
+
+##project_profile.json
+<img width="1292" height="667" alt="image" src="https://github.com/user-attachments/assets/390024c4-3caf-4b0e-84b9-8a72354161b0" />
+
