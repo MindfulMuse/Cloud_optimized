@@ -126,7 +126,7 @@ python-dotenv: Environment variable management
 groq: Groq LLM API client
 
 
-
+##
 ## ⚙️ Configuration
 Step 1: Get Groq API Key
 
@@ -141,7 +141,7 @@ Create a .env file in the project root:
 bash# Windows
 copy .env.example .env
 
-# Mac/Linux
+## Mac/Linux
 cp .env.example .env
 Step 3: Add Your API Key
 Open .env and add your key:
@@ -156,65 +156,119 @@ Never commit .env to version control
 ## 🚀 Usage
 Starting the Application
 bashpython main.py
+-
 
+## 🚀 Getting Started
 
-### 1️⃣ Run the python file
+### 1️⃣ Run the Python File
 
-<img width="947" height="521" alt="image" src="https://github.com/user-attachments/assets/bc2c7b5a-bdb9-47eb-8fbb-bdcfc7f8d2fb" />
+```bash
+python main.py
+```
 
+📸 **CLI Startup Screen**
 
+![Run Python File](https://github.com/user-attachments/assets/bc2c7b5a-bdb9-47eb-8fbb-bdcfc7f8d2fb)
+
+---
 
 ### 2️⃣ Run Complete Analysis
 
-<img width="967" height="517" alt="image" src="https://github.com/user-attachments/assets/104336c0-0611-43d0-8a6b-0d376c0e0dcf" />
+Select **Option 1** from the menu to perform a full cost analysis.
 
-Output:
+📸 **Running Analysis**
 
-<img width="882" height="640" alt="image" src="https://github.com/user-attachments/assets/3841f024-759a-4910-99db-7eb364ddf4fc" />
+![Run Analysis](https://github.com/user-attachments/assets/104336c0-0611-43d0-8a6b-0d376c0e0dcf)
 
-<img width="875" height="542" alt="image" src="https://github.com/user-attachments/assets/b75af61c-0bc1-4af0-ba0c-87f1a5bce21e" />
+📸 **Analysis Output**
 
+![Output 1](https://github.com/user-attachments/assets/3841f024-759a-4910-99db-7eb364ddf4fc)
 
+![Output 2](https://github.com/user-attachments/assets/b75af61c-0bc1-4af0-ba0c-87f1a5bce21e)
 
-### 3️⃣ ANALYSIS SUMMARY
+---
 
-<img width="848" height="425" alt="image" src="https://github.com/user-attachments/assets/0f09e116-1bea-4d11-8f5d-59e3189fc3d2" />
+### 3️⃣ Analysis Summary
 
+After analysis completion, a detailed **summary view** is displayed including:
 
-<img width="743" height="621" alt="image" src="https://github.com/user-attachments/assets/166e5351-dc92-40b4-92a6-37a870f0395e" />
+* 💰 Total monthly cloud spend
+* 📉 Cost distribution by service
+* ⚠️ Inefficient resource flags
+* 📌 Optimization suggestions
+
+📸 **Summary Screens**
+
+![Summary 1](https://github.com/user-attachments/assets/0f09e116-1bea-4d11-8f5d-59e3189fc3d2)
+
+![Summary 2](https://github.com/user-attachments/assets/166e5351-dc92-40b4-92a6-37a870f0395e)
+
+---
 
 ### 4️⃣ Export Report
-Select Option 4 to save a formatted text report.
-<img width="906" height="233" alt="image" src="https://github.com/user-attachments/assets/87ee5b01-88c0-42a8-a96d-a2981bfd0a2f" />
 
+Select **Option 4** to export a formatted cost optimization report.
 
-### 5️⃣ Exit
-Select Option 5 to close the application.
-<img width="766" height="486" alt="image" src="https://github.com/user-attachments/assets/79877f3a-db7f-4055-90e3-28494f781320" />
-<img width="991" height="502" alt="image" src="https://github.com/user-attachments/assets/88fae00d-c536-454d-9470-62cc7358a8c8" />
+📄 The report is saved as a `.txt` file inside the `reports/` directory.
 
----
+📸 **Export Option**
 
-# Example output :
----
-
-<img width="838" height="441" alt="image" src="https://github.com/user-attachments/assets/6f814774-bbb7-4467-882f-379c7637c511" />
+![Export Report](https://github.com/user-attachments/assets/87ee5b01-88c0-42a8-a96d-a2981bfd0a2f)
 
 ---
 
-## mock_billing.json
+### 5️⃣ Exit Application
 
-<img width="1341" height="498" alt="image" src="https://github.com/user-attachments/assets/3445cb97-da4f-479a-b101-656f13760252" />
+Select **Option 5** to safely exit the program.
+
+📸 **Exit Screens**
+
+![Exit 1](https://github.com/user-attachments/assets/79877f3a-db7f-4055-90e3-28494f781320)
+
+![Exit 2](https://github.com/user-attachments/assets/88fae00d-c536-454d-9470-62cc7358a8c8)
 
 ---
 
-## cost_optimization_report.json 
-<img width="820" height="912" alt="image" src="https://github.com/user-attachments/assets/3f9df6e6-6961-4550-b1c1-1801cb700319" />
+## 🧪 Example Output
+
+📸 **Sample Analysis Result**
+
+![Example Output](https://github.com/user-attachments/assets/6f814774-bbb7-4467-882f-379c7637c511)
 
 ---
 
-## project_profile.json
-<img width="1292" height="667" alt="image" src="https://github.com/user-attachments/assets/390024c4-3caf-4b0e-84b9-8a72354161b0" />
+## 📄 Input & Output Files
+
+### 🔹 `mock_billing.json`
+
+Simulated cloud billing data used for analysis.
+
+![mock\_billing.json](https://github.com/user-attachments/assets/3445cb97-da4f-479a-b101-656f13760252)
+
+---
+
+### 🔹 `project_profile.json`
+
+Defines project metadata and environment details.
+
+![project\_profile.json](https://github.com/user-attachments/assets/390024c4-3caf-4b0e-84b9-8a72354161b0)
+
+---
+
+### 🔹 `cost_optimization_report.json`
+
+Structured output containing optimization recommendations.
+
+![cost\_optimization\_report.json](https://github.com/user-attachments/assets/3f9df6e6-6961-4550-b1c1-1801cb700319)
+
+---
+
+## 📈 Optimization Logic (Highlights)
+
+* Identifies **idle or low-utilization services**
+* Flags **over-provisioned compute resources**
+* Suggests **downsizing & cleanup actions**
+* Estimates **potential monthly savings**
 
 ---
 
@@ -260,3 +314,19 @@ Select Option 5 to close the application.
 └─────────────────────┘
 
 ```
+## 📈 Optimization Logic (Highlights)
+
+* Identifies **idle or low-utilization services**
+* Flags **over-provisioned compute resources**
+* Suggests **downsizing & cleanup actions**
+* Estimates **potential monthly savings**
+
+---
+
+## 📌 Use Cases
+
+* Cloud cost optimization demos
+* FinOps learning projects
+* CLI analytics tooling reference
+
+---
