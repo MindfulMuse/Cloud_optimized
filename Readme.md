@@ -15,12 +15,8 @@ An intelligent cloud cost optimization tool that uses **Large Language Models (L
 - [Configuration](#️-configuration)
 - [Usage](#-usage)
 - [Example Files](#-example-files)
-- [How It Works](#-how-it-works)
 - [Architecture](#-architecture)
 - [Tools Used](#-tools-used)
-- [Troubleshooting](#-troubleshooting)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
@@ -229,7 +225,7 @@ Select **Option 5** to safely exit the program.
 
 ---
 
-## 🧪 Example Output
+## 🧪 Example Files
 
 📸 **Sample Analysis Result**
 
@@ -317,9 +313,9 @@ Structured output containing optimization recommendations.
 
 ## 📌 Use Cases
 
-*Reduces cloud costs by identifying waste and overprovisioned resources.
-*Provides actionable optimization recommendations across AWS, Azure, and GCP.
-*Helps plan cost-efficient architectures before deployment.
-*Supports continuous cost monitoring and multi-cloud decision-making.
+* Reduces cloud costs by identifying waste and overprovisioned resources.
+* Provides actionable optimization recommendations across AWS, Azure, and GCP.
+* Helps plan cost-efficient architectures before deployment.
+* Supports continuous cost monitoring and multi-cloud decision-making.
 
 ---
