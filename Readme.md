@@ -1,48 +1,74 @@
-💰 Cloud Cost Optimizer - AI-Powered LLM-Driven System
-An intelligent cloud cost optimization tool that uses Large Language Models (LLMs) to analyze project requirements, generate synthetic billing data, and provide actionable multi-cloud cost optimization recommendations.
-Show Image
-Show Image
-Show Image
+# 💰 Cloud Cost Optimizer – AI-Powered LLM-Driven System
 
-📑 Table of Contents
+An intelligent cloud cost optimization tool that uses **Large Language Models (LLMs)** to analyze project requirements, generate synthetic billing data, and provide actionable **multi-cloud cost optimization recommendations**.
 
-Features
-Project Structure
-Prerequisites
-Installation
-Configuration
-Usage
-Example Files
-How It Works
-Architecture
-Tools Used
-Troubleshooting
-Contributing
-License
+> 📊 Analyze. 💡 Optimize. 💸 Save.
 
+---
 
-✨ Features
-Core Capabilities
+## 📸 Screenshots
 
--- AI-Powered Profile Extraction: Automatically extracts structured project profiles from free-form text descriptions
--- Synthetic Billing Generation: Creates realistic, budget-aware cloud billing data (12-20 records)
--- Multi-Cloud Cost Analysis: Analyzes costs across AWS, Azure, and GCP
--- Optimization Recommendations: Provides 6-10 actionable cost-saving recommendations
--- Alternative Solutions: Suggests open-source and free-tier alternatives
--- Report Generation: Exports detailed reports in JSON and formatted text
+_Show Image_  
+_Show Image_  
+_Show Image_
 
-Key Features
+---
 
-✅ Free-form text input (no strict format required)
-✅ Budget-aware cost generation
-✅ Multi-cloud provider support (AWS, Azure, GCP)
-✅ Open-source alternative recommendations
-✅ Risk and effort assessment for each recommendation
-✅ Step-by-step implementation guides
-✅ CLI-based interface (Windows, Mac, Linux compatible)
+## 📑 Table of Contents
 
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
+- [Configuration](#️-configuration)
+- [Usage](#-usage)
+- [Example Files](#-example-files)
+- [How It Works](#-how-it-works)
+- [Architecture](#-architecture)
+- [Tools Used](#-tools-used)
+- [Troubleshooting](#-troubleshooting)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-📁 Project Structure
+---
+
+## ✨ Features
+
+### 🔹 Core Capabilities
+
+- **AI-Powered Profile Extraction**  
+  Automatically extracts structured project profiles from free-form text descriptions.
+
+- **Synthetic Billing Generation**  
+  Creates realistic, budget-aware cloud billing data (12–20 records).
+
+- **Multi-Cloud Cost Analysis**  
+  Analyzes costs across **AWS**, **Azure**, and **GCP**.
+
+- **Optimization Recommendations**  
+  Provides **6–10 actionable cost-saving recommendations**.
+
+- **Alternative Solutions**  
+  Suggests open-source and free-tier alternatives.
+
+- **Report Generation**  
+  Exports detailed reports in **JSON** and **human-readable formatted text**.
+
+### ✅ Key Features
+
+- Free-form text input (no strict format required)
+- Budget-aware cost generation
+- Multi-cloud provider support (AWS, Azure, GCP)
+- Open-source alternative recommendations
+- Risk and effort assessment for each recommendation
+- Step-by-step implementation guides
+- CLI-based interface (Windows, macOS, Linux)
+
+---
+
+## 📁 Project Structure
+
+```text
 cloud-cost-optimizer/
 ├── main.py                          # Main CLI application
 ├── profile_extractor.py             # LLM-based profile extraction
@@ -50,20 +76,21 @@ cloud-cost-optimizer/
 ├── cost_analyzer.py                 # Cost analysis & recommendations
 ├── utils.py                         # Utility functions
 ├── requirements.txt                 # Python dependencies
-├── .env                            # API keys (not tracked in git)
-├── .env.example                    # Environment template
-├── README.md                       # This file
-├── data/                           # Generated data files
-│   ├── project_description.txt     # User's project description
-│   ├── project_profile.json        # Extracted project profile
-│   ├── mock_billing.json          # Generated billing records
-│   ├── cost_optimization_report.json       # Full analysis report
-│   └── cost_optimization_report_formatted.txt  # Human-readable report
-└── examples/                       # Example files
+├── .env                             # API keys (not tracked in git)
+├── .env.example                     # Environment template
+├── README.md                        # This file
+├── data/                            # Generated data files
+│   ├── project_description.txt
+│   ├── project_profile.json
+│   ├── mock_billing.json
+│   ├── cost_optimization_report.json
+│   └── cost_optimization_report_formatted.txt
+└── examples/                        # Example files
     ├── example_description.txt
     ├── example_profile.json
     ├── example_billing.json
     └── example_report.json
+
 
 🔧 Prerequisites
 Required Software
