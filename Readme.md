@@ -15,7 +15,7 @@ An intelligent cloud cost optimization tool that uses **Large Language Models (L
 - [Configuration](#️-configuration)
 - [Usage](#-usage)
 - [Example Files](#-example-files)
-- [Architecture](#-system-architecture)
+- [System Architecture](#-system-architecture)
 - [Optimization Logic ](#-Optimization-Logic)
 - [Use Cases](#-use-cases)
 
@@ -303,7 +303,7 @@ Structured output containing optimization recommendations.
 └─────────────────────┘
 
 ```
-## 📈 Optimization Logic (Highlights)
+## 📈 Optimization Logic
 
 * Identifies **idle or low-utilization services**
 * Flags **over-provisioned compute resources**
