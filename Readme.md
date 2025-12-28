@@ -6,14 +6,6 @@ An intelligent cloud cost optimization tool that uses **Large Language Models (L
 
 ---
 
-## 📸 Screenshots
-
-_Show Image_  
-_Show Image_  
-_Show Image_
-
----
-
 ## 📑 Table of Contents
 
 - [Features](#-features)
@@ -94,15 +86,15 @@ cloud-cost-optimizer/
 ```
 
 ## 🔧 Prerequisites
-Required Software
 
-Python: 3.9 or higher
-pip: Python package installer
-Git: For cloning the repository
+### Required Software
 
- -------------------
-| API Requirements  |
- -------------------
+- **Python**: 3.9 or higher  
+- **pip**: Python package installer  
+- **Git**: For cloning the repository  
+
+### 🔑 API Requirements
+
 
 Groq API Key: Free account at https://console.groq.com
 
@@ -114,17 +106,18 @@ Free tier includes generous quota for testing
 
 
 ## 📥 Installation
-Step 1: Clone the Repository
+
+- Step 1: Clone the Repository
 bashgit clone https://github.com/yourusername/cloud-cost-optimizer.git
 cd cloud-cost-optimizer
-Step 2: Create Virtual Environment
+- Step 2: Create Virtual Environment
 Windows:
 bashpython -m venv venv
 venv\Scripts\activate
 Mac/Linux:
 bashpython3 -m venv venv
 source venv/bin/activate
-Step 3: Install Dependencies
+- Step 3: Install Dependencies
 bashpip install -r requirements.txt
 Dependencies installed:
 
@@ -132,7 +125,7 @@ requests: HTTP library for API calls
 python-dotenv: Environment variable management
 groq: Groq LLM API client
 
----
+
 
 ## ⚙️ Configuration
 Step 1: Get Groq API Key
@@ -159,13 +152,11 @@ No quotes around the API key
 No spaces before or after =
 Never commit .env to version control
 
----
 
 ## 🚀 Usage
 Starting the Application
 bashpython main.py
 
----
 
 ### 1️⃣ Run the python file
 
@@ -205,17 +196,67 @@ Select Option 5 to close the application.
 ---
 
 # Example output :
+---
+
 <img width="838" height="441" alt="image" src="https://github.com/user-attachments/assets/6f814774-bbb7-4467-882f-379c7637c511" />
+
+---
 
 ## mock_billing.json
 
 <img width="1341" height="498" alt="image" src="https://github.com/user-attachments/assets/3445cb97-da4f-479a-b101-656f13760252" />
 
+---
 
 ## cost_optimization_report.json 
 <img width="820" height="912" alt="image" src="https://github.com/user-attachments/assets/3f9df6e6-6961-4550-b1c1-1801cb700319" />
 
+---
 
 ## project_profile.json
 <img width="1292" height="667" alt="image" src="https://github.com/user-attachments/assets/390024c4-3caf-4b0e-84b9-8a72354161b0" />
 
+---
+
+## 🏗️ System Architecture
+
+```text
+┌─────────────────────┐
+│  User Input         │
+│  (Free-form text)   │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│  Profile Extractor  │ ──► Groq LLM API
+│  (AI Extraction)    │     (Llama 3.1 8B)
+└──────────┬──────────┘
+           │
+           ▼
+     project_profile.json
+           │
+           ▼
+┌─────────────────────┐
+│  Billing Generator  │ ──► Groq LLM API
+│  (Synthetic Data)   │     (Context-aware)
+└──────────┬──────────┘
+           │
+           ▼
+     mock_billing.json
+           │
+           ▼
+┌─────────────────────┐
+│  Cost Analyzer      │ ──► Groq LLM API
+│  (Recommendations)  │     (Expert analysis)
+└──────────┬──────────┘
+           │
+           ▼
+  cost_optimization_report.json
+           │
+           ▼
+┌─────────────────────┐
+│  Output Reports     │
+│  (JSON + TXT)       │
+└─────────────────────┘
+
+```
