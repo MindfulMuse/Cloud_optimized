@@ -126,7 +126,6 @@ python-dotenv: Environment variable management
 groq: Groq LLM API client
 
 
-##
 ## ⚙️ Configuration
 Step 1: Get Groq API Key
 
@@ -154,9 +153,10 @@ Never commit .env to version control
 
 
 ## 🚀 Usage
+
 Starting the Application
 bashpython main.py
--
+
 
 ## 🚀 Getting Started
 
@@ -261,14 +261,6 @@ Structured output containing optimization recommendations.
 
 ![cost\_optimization\_report.json](https://github.com/user-attachments/assets/3f9df6e6-6961-4550-b1c1-1801cb700319)
 
----
-
-## 📈 Optimization Logic (Highlights)
-
-* Identifies **idle or low-utilization services**
-* Flags **over-provisioned compute resources**
-* Suggests **downsizing & cleanup actions**
-* Estimates **potential monthly savings**
 
 ---
 
@@ -283,7 +275,7 @@ Structured output containing optimization recommendations.
            ▼
 ┌─────────────────────┐
 │  Profile Extractor  │ ──► Groq LLM API
-│  (AI Extraction)    │     (Llama 3.1 8B)
+│  (AI Extraction)    │     (Llama-3.1-8b-instant)
 └──────────┬──────────┘
            │
            ▼
@@ -325,8 +317,9 @@ Structured output containing optimization recommendations.
 
 ## 📌 Use Cases
 
-* Cloud cost optimization demos
-* FinOps learning projects
-* CLI analytics tooling reference
+*Reduces cloud costs by identifying waste and overprovisioned resources.
+*Provides actionable optimization recommendations across AWS, Azure, and GCP.
+*Helps plan cost-efficient architectures before deployment.
+*Supports continuous cost monitoring and multi-cloud decision-making.
 
 ---
