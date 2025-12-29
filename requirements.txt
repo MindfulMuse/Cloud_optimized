@@ -1,0 +1,3 @@
+requests==2.31.0          # HTTP library for API calls
+python-dotenv==1.0.1      # Environment variable management
+groq==0.11.0              # Groq LLM API client

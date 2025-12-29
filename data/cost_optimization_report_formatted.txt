@@ -3,175 +3,172 @@ CLOUD COST OPTIMIZATION REPORT
 ================================================================================
 
 Project: E-commerce Website
-Generated: 2025-12-27 18:12:53
+Generated: 2025-12-28 16:24:58
 
 COST ANALYSIS
 --------------------------------------------------------------------------------
-Total Monthly Cost: ₹7,150.00
+Total Monthly Cost: ₹9,600.00
 Budget: ₹5,000.00
-Variance: ₹2,150.00
+Variance: ₹4,600.00
 Over Budget: Yes
 
 Service Costs Breakdown:
+  - CloudFront: ₹3,000.00
   - EC2: ₹1,800.00
-  - RDS: ₹1,800.00
-  - Data Transfer: ₹800.00
-  - Backup: ₹600.00
-  - Lambda: ₹500.00
-  - S3: ₹450.00
-  - Load Balancer: ₹300.00
-  - CloudFront: ₹200.00
-  - SES: ₹200.00
-  - CloudWatch: ₹150.00
-  - WAF: ₹150.00
-  - Route53: ₹100.00
-  - VPC: ₹100.00
+  - RDS: ₹1,500.00
+  - WAF: ₹1,000.00
+  - CloudWatch: ₹750.00
+  - S3: ₹510.00
+  - SES: ₹500.00
+  - Lambda: ₹300.00
+  - Backup: ₹200.00
+  - Route53: ₹40.00
 
 ================================================================================
 RECOMMENDATIONS
 ================================================================================
 
-1. Migrate to AWS Free Tier for EC2
+1. Migrate to DigitalOcean for EC2
 --------------------------------------------------------------------------------
 Service: EC2
 Current Cost: ₹1,800.00
 Potential Savings: ₹900.00
+Type: alternative_provider
+Effort: medium | Risk: low
+
+Description: Migrate EC2 instances to DigitalOcean for cost savings.
+
+Cloud Providers: AWS, DigitalOcean
+
+Implementation Steps:
+  1. Assess EC2 instance requirements
+  2. Create DigitalOcean account
+  3. Migrate EC2 instances to DigitalOcean
+
+2. Use PostgreSQL free tier for RDS
+--------------------------------------------------------------------------------
+Service: RDS
+Current Cost: ₹1,500.00
+Potential Savings: ₹750.00
 Type: free_tier
 Effort: low | Risk: low
 
-Description: Utilize the AWS Free Tier for EC2 to reduce costs. This includes 750 hours of Linux/Unix usage per month.
+Description: Use PostgreSQL free tier for RDS to reduce costs.
 
 Cloud Providers: AWS
 
 Implementation Steps:
-  1. Stop and terminate all EC2 instances
-  2. Create a new EC2 instance using the AWS Free Tier
-  3. Migrate applications to the new EC2 instance
+  1. Assess RDS instance requirements
+  2. Create PostgreSQL free tier instance
+  3. Migrate RDS data to PostgreSQL free tier
 
-2. Migrate to AWS Free Tier for RDS
+3. Optimize CloudFront configuration
 --------------------------------------------------------------------------------
-Service: RDS
-Current Cost: ₹1,800.00
-Potential Savings: ₹900.00
-Type: free_tier
-Effort: low | Risk: low
+Service: CloudFront
+Current Cost: ₹3,000.00
+Potential Savings: ₹1,500.00
+Type: optimization
+Effort: medium | Risk: low
 
-Description: Utilize the AWS Free Tier for RDS to reduce costs. This includes 750 hours of usage per month.
+Description: Optimize CloudFront configuration to reduce costs.
 
 Cloud Providers: AWS
 
 Implementation Steps:
-  1. Stop and terminate all RDS instances
-  2. Create a new RDS instance using the AWS Free Tier
-  3. Migrate databases to the new RDS instance
+  1. Assess CloudFront configuration
+  2. Optimize CloudFront cache settings
+  3. Optimize CloudFront pricing plan
 
-3. Use PostgreSQL as an Open-Source Alternative
+4. Use self-hosted MongoDB for database
 --------------------------------------------------------------------------------
-Service: RDS
-Current Cost: ₹1,800.00
-Potential Savings: ₹900.00
+Service: database
+Current Cost: ₹0.00
+Potential Savings: ₹1,500.00
 Type: open_source
-Effort: medium | Risk: medium
+Effort: high | Risk: medium
 
-Description: Use PostgreSQL as an open-source alternative to RDS. This can be self-hosted on-premises or in the cloud.
+Description: Use self-hosted MongoDB for database to reduce costs.
 
 Cloud Providers: Self-hosted
 
 Implementation Steps:
-  1. Install PostgreSQL on a self-hosted server
-  2. Migrate databases to PostgreSQL
-  3. Configure PostgreSQL for high availability
+  1. Assess database requirements
+  2. Create self-hosted MongoDB instance
+  3. Migrate database data to self-hosted MongoDB
 
-4. Use DigitalOcean as an Alternative Provider
+5. Use CloudWatch free tier for monitoring
 --------------------------------------------------------------------------------
-Service: EC2
-Current Cost: ₹1,800.00
-Potential Savings: ₹600.00
-Type: alternative_provider
-Effort: medium | Risk: medium
-
-Description: Use DigitalOcean as an alternative provider for EC2. This can provide cost savings and improved performance.
-
-Cloud Providers: DigitalOcean
-
-Implementation Steps:
-  1. Create a new DigitalOcean account
-  2. Migrate applications to DigitalOcean
-  3. Configure DigitalOcean for high availability
-
-5. Right-Size EC2 Instances
---------------------------------------------------------------------------------
-Service: EC2
-Current Cost: ₹1,800.00
-Potential Savings: ₹300.00
-Type: optimization
+Service: CloudWatch
+Current Cost: ₹750.00
+Potential Savings: ₹375.00
+Type: free_tier
 Effort: low | Risk: low
 
-Description: Right-size EC2 instances to reduce costs. This includes using smaller instance types and optimizing resource utilization.
+Description: Use CloudWatch free tier for monitoring to reduce costs.
 
 Cloud Providers: AWS
 
 Implementation Steps:
-  1. Analyze EC2 instance usage
-  2. Right-size EC2 instances
-  3. Monitor and adjust instance sizes as needed
+  1. Assess CloudWatch requirements
+  2. Create CloudWatch free tier instance
+  3. Migrate monitoring data to CloudWatch free tier
 
-6. Use Reserved Instances for EC2
+6. Use reserved instances for EC2
 --------------------------------------------------------------------------------
 Service: EC2
 Current Cost: ₹1,800.00
-Potential Savings: ₹450.00
+Potential Savings: ₹540.00
 Type: reserved_instance
-Effort: medium | Risk: medium
+Effort: medium | Risk: low
 
-Description: Use reserved instances for EC2 to reduce costs. This includes committing to a 1-year or 3-year term.
+Description: Use reserved instances for EC2 to reduce costs.
 
 Cloud Providers: AWS
 
 Implementation Steps:
-  1. Analyze EC2 instance usage
-  2. Commit to a reserved instance term
-  3. Migrate applications to reserved instances
+  1. Assess EC2 instance requirements
+  2. Create reserved instance
+  3. Migrate EC2 instances to reserved instance
 
-7. Use Serverless Computing for Lambda
+7. Use cost-effective storage for S3
+--------------------------------------------------------------------------------
+Service: S3
+Current Cost: ₹510.00
+Potential Savings: ₹102.00
+Type: cost_effective_storage
+Effort: low | Risk: low
+
+Description: Use cost-effective storage for S3 to reduce costs.
+
+Cloud Providers: AWS
+
+Implementation Steps:
+  1. Assess S3 storage requirements
+  2. Create cost-effective storage instance
+  3. Migrate S3 data to cost-effective storage
+
+8. Use serverless architecture for Lambda
 --------------------------------------------------------------------------------
 Service: Lambda
-Current Cost: ₹500.00
-Potential Savings: ₹250.00
+Current Cost: ₹300.00
+Potential Savings: ₹60.00
 Type: serverless
 Effort: medium | Risk: medium
 
-Description: Use serverless computing for Lambda to reduce costs. This includes using AWS Lambda functions and optimizing resource utilization.
+Description: Use serverless architecture for Lambda to reduce costs.
 
 Cloud Providers: AWS
 
 Implementation Steps:
-  1. Analyze Lambda function usage
-  2. Migrate applications to serverless computing
-  3. Monitor and adjust resource utilization as needed
-
-8. Optimize Data Transfer Costs
---------------------------------------------------------------------------------
-Service: Data Transfer
-Current Cost: ₹800.00
-Potential Savings: ₹400.00
-Type: optimization
-Effort: low | Risk: low
-
-Description: Optimize data transfer costs by reducing data transfer volumes and using cost-effective transfer options.
-
-Cloud Providers: AWS
-
-Implementation Steps:
-  1. Analyze data transfer usage
-  2. Optimize data transfer volumes
-  3. Use cost-effective transfer options
+  1. Assess Lambda requirements
+  2. Create serverless architecture
+  3. Migrate Lambda functions to serverless architecture
 
 
 ================================================================================
 SUMMARY
 ================================================================================
-Total Potential Savings: ₹4,700.00
-Savings Percentage: 65.73%
+Total Potential Savings: ₹5,727.00
+Savings Percentage: 59.66%
 Total Recommendations: 8
-High Impact Recommendations: 3
+High Impact Recommendations: 2

@@ -35,7 +35,7 @@ def call_llm(prompt, max_tokens=1000, retries=2):
         try:
             response = client.chat.completions.create(
                 # model="meta-llama/llama-4-scout-17b-16e-instruct",
-                model="llama-3.1-8b-instant" , # faster and supported
+                model="llama-3.1-8b-instant" , 
                 messages=[
                     {"role": "user", "content": prompt}
                 ],
